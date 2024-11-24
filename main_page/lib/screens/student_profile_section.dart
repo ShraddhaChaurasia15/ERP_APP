@@ -34,10 +34,10 @@ class StudentProfileSection extends StatelessWidget {
             ),
             Divider(),
             ListTile(
-              title: Text('University Enrollment No.: 15101182023'),
+              title: Text('University Enrollment No.: 18301012023'),
             ),
             ListTile(
-              title: Text('Student Name: Vedanshi Mishra'),
+              title: Text('Student Name: Shraddha Chaurasia'),
             ),
             ListTile(
               title: Text('Gender: Female'),

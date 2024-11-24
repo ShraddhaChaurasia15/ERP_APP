@@ -24,16 +24,18 @@ class GECSubjectRegistrationPage extends StatelessWidget {
               style: TextStyle(fontSize: 16, color: Colors.grey[700]),
             ),
             SizedBox(height: 20),
-            if (!isRegistrationOpen) 
+            if (!isRegistrationOpen)
               Row(
                 children: [
                   Icon(Icons.schedule, color: Colors.red),
                   SizedBox(width: 10),
-                  Expanded( // Wrap Text in Expanded to prevent overflow
+                  Expanded(
+                    // Wrap Text in Expanded to prevent overflow
                     child: Text(
                       'Next registration period: Jan 10 - Jan 20, 2025',
                       style: TextStyle(fontSize: 16, color: Colors.red),
-                      overflow: TextOverflow.ellipsis, // Add ellipsis if text is too long
+                      overflow: TextOverflow
+                          .ellipsis, // Add ellipsis if text is too long
                     ),
                   ),
                 ],
@@ -51,10 +53,12 @@ class GECSubjectRegistrationPage extends StatelessWidget {
                 children: [
                   ListTile(
                     leading: Icon(Icons.check_circle, color: Colors.grey),
-                    title: Text('Previous GEC Registration: August 10 - August 20, 2024'),
+                    title: Text(
+                        'Previous GEC Registration: August 10 - August 20, 2024'),
                   ),
                   ListTile(
-                    leading: Icon(Icons.access_time, color: isRegistrationOpen ? Colors.green : Colors.red),
+                    leading: Icon(Icons.access_time,
+                        color: isRegistrationOpen ? Colors.green : Colors.red),
                     title: Text(isRegistrationOpen
                         ? 'Current GEC Registration: Open until January 20, 2025'
                         : 'Upcoming GEC Registration: January 10 - January 20, 2025'),

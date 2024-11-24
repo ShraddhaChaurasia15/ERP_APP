@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ERP App',
+      debugShowCheckedModeBanner: false,
+      title: 'UniLog',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
